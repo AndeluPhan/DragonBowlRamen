@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal__contents">
+            <img src = "images/menu2.jpg" alt = "first page of menu">
+            <img src = "images/menu1.jpg" alt = "second page of menu">
+        </div>
+    </div>
+    <div class = "hero-bg">
+        <section class = "top">
+            <header>
+                <a href="https://youtu.be/bBlg2zwPyD0">Help Us Improve. Ramen Suggestions!</a>
+            </header>
+            <div class = "image-container">
+                <img src = "images/logo3.gif" alt = "logo">
+            </div>
+            <p>Serving Authentic Japanese Ramen. <br/> Founded by Jimmy Lee.<br/> </p>
+
+            <div class = "links-container">
+                <form>
+                    <input type="button" value = "Instagram">
+                    <input type="button" value = "Menu" id = "m-btn">
+                    <input type="button" value = "Reserve">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class = "noodle" style="padding-top: 1rem;">
+        <div class = "right-col">
+            <h2>What we're all about.</h2>
+            <p>Creamy broth and fragrant oils. Delicious toppings and a delicate balance of flavors. The most authentic Japanese Ramen in Orlando.</p>
+        </div>
+        <img src = "images/Ramen.jpg" alt="A Bowl of Finest Ramen">
+    </section>
+
+    <section class = "contact">
+        <div class = "left-col">
+            <h2>itadakimasu!</h2>
+            <p>Location: <br/> Phone Number: (407) 681-3555 <br/> </p>
+        </div>
+        <div class = "google">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.787193349823!2d-81.43459434934486!3d28.485954797364588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77ea893b83cbf%3A0x435ea706c44f9c5e!2sGameStop!5e0!3m2!1sen!2sus!4v1591220994794!5m2!1sen!2sus" width="330" height="247" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+        </div>
+    </section>
+
+    
+    <script>
+        let btn =  document.getElementById('m-btn');
+        let modal = document.getElementById('modal');
+        btn.addEventListener('click', ()=> {
+            modal.style.display = "flex";
+        })
+        modal.addEventListener('click', ()=>{
+            modal.style.display = "none";
+        })
+
+    </script>
+</body>
+
+</html>
